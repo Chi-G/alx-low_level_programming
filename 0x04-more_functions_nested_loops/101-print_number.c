@@ -2,7 +2,7 @@
 
 /**
 * print_number - prints an integer
-* @n: input integer parameter
+* @n:input integer parameter
 *
 * Return:Always 0
 */
@@ -13,7 +13,7 @@ unsigned int i = n;
 if (n < 0)
 {
 _putchar(45);
-i = -1;
+i = -i;
 }
 if (i / 10)
 {
