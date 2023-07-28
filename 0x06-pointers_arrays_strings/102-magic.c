@@ -1,9 +1,5 @@
 #include <stdio.h>
-/*
- * main - Add one line to the code, to print
- *
- * Return: 0 (Success)
- */
+
 int main(void)
 {
 int n;
@@ -23,4 +19,5 @@ p = &n;
   /* ...so that this prints 98\n */
 printf("a[2] = %d\n", a[2]);
 return (0);
+}
 }
