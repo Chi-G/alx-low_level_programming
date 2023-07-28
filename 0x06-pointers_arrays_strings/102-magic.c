@@ -1,4 +1,9 @@
 #include <stdio.h>
+/*
+ * main - Add one line to the code, to print
+ *
+ * Return: 0 (Success)
+ */
 
 int main(void)
 {
