@@ -255,7 +255,8 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
  * Description: if the file cannot be close - exide with code 98
  */
 
-void close_elf(int elf){
+void close_elf(int elf)
+{
 	if (close(elf) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: can't close fd %d\n", elf);
