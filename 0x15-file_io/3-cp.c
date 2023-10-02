@@ -6,10 +6,10 @@ char *create_buffer(char *file);
 void close_file(int fd);
 
 /**
- * create_buffer - this function allocates 1024 bytes in a buffer.
+ * create_buffer - this function allocates 1024 bytes for a buffer.
  * @file: this is the name of the file buffer is storing chars for.
  *
- * Return: the pointer to the newly-allocated buffer.
+ * Return: the pointer to the new buffer allocated
  */
 char *create_buffer(char *file)
 {
@@ -46,7 +46,7 @@ void close_file(int fd)
 
 /**
  * main - this copies the contents of a file to another file.
- * @argc: this is the number of arguments supplied to the program.
+ * @argc: this is the number of args supplied to the program.
  * @argv: the array of pointers to the args
  *
  * Return: 0 on success.
