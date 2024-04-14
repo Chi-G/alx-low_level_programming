@@ -2,6 +2,10 @@
 #include <math.h>
 #include <stdio.h>
 
+size_t min(size_t a, size_t b) {
+    return (a < b) ? a : b;
+}
+
 /**
  * jump_search - Searches for a value in a sorted array of integers
  *               using the Jump search algorithm.
@@ -14,8 +18,7 @@
  */
 int jump_search(int *array, size_t size, int value)
 {
-    size_t step;
-    size_t prev;
+    size_t step, prev;
 
     if (array == NULL || size == 0) {
         return -1;
@@ -23,7 +26,7 @@ int jump_search(int *array, size_t size, int value)
 
     step = sqrt(size);
     prev = 0;
-    
+
     while (array[min(step, size) - 1] < value) {
         prev = step;
         step += sqrt(size);
