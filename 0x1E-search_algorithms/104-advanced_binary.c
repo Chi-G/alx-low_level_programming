@@ -11,14 +11,14 @@
  */
 int advanced_binary(int *array, size_t size, int value)
 {
-    if (array == NULL || size == 0)
-        return -1;
-
     int left = 0;
     int right = size - 1;
+    int mid;
 
     while (left <= right) {
-        int mid = left + (right - left) / 2;
+        mid = left + (right - left) / 2;
+
+        printf("Searching in array: [%d, %d]\n", left, right);
 
         if (array[mid] == value) {
             return mid;
