@@ -15,18 +15,17 @@ int interpolation_search(int *array, size_t size, int value)
     size_t high = size - 1;
 
     while (low <= high && value >= array[low] && value <= array[high]) {
-        // Calculate the position using interpolation formula
         size_t pos = low + ((double)(high - low) / (array[high] - array[low])) * (value - array[low]);
 
         if (array[pos] == value)
-            return pos; // Found the value at position 'pos'
+            return pos;
 
         if (array[pos] < value)
-            low = pos + 1; // Update the low index
+            low = pos + 1;
 
         else
-            high = pos - 1; // Update the high index
+            high = pos - 1;
     }
 
-    return -1; // Return -1 if the value is not found
+    return -1;
 }
